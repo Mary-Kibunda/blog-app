@@ -1,12 +1,18 @@
 import { Mail, PlusCircle, SquarePen, Target } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+
 
 const Sidebar = () => {
   return (
     <div className="flex flex-col bg-slate-100">
       <div className="px-2 sm:pl-14 py-3 inline-flex items-center justify-center border border-black">
-        <Target className="h-8 w-8 text-green-400 font-bold mr-2" />{" "}
-        <span>Blogie</span>
+        <Image 
+          src="/logo.jpg"
+          alt="logo"
+          width={180}
+          height={180}
+        />
       </div>
 
       <div className="w-60 sm:80 h-screen relative py-12 border border-black ">

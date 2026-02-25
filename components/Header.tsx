@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { Target, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import axios from "axios";
+import Image from "next/image";
 
 const Header = () => {
   const [email, setEmail] = useState("");
@@ -26,8 +27,13 @@ const Header = () => {
     <div className=" py-5 px-5 md:px-12 lg:px-28">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <Target className="h-20 w-20 text-[#0be08e] sm:w-auto sm:h-auto " />
-          <h3 className="p-4 font-bold text-xl md:text-3xl">Blogie</h3>
+          <Image
+            src="/logo.jpg"
+            alt="logo"
+            width={180}
+            height={180}
+            className="mr-2"
+          />
         </div>
         <div className="flex flex-row space-x-4 ">
           <Link

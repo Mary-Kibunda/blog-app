@@ -101,11 +101,16 @@ const Page = ({ params }: { params: Promise<{ id: number }> }) => {
 
   return data ? (
     <>
-      <div className="bg-gray-200 py-5 px-5 md:px-12 lg:px-28">
+      <div className="bg-gray-50 py-5 px-5 md:px-12 lg:px-28">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
-            <Target className="w-10 h-10 sm:w-auto" />
-            <h3 className="p-4 font-bold text-xl md:text-3xl">Blogie</h3>
+            <Image
+              src="/logo.jpg"
+              alt="logo"
+              width={180}
+              height={180}
+              className="mr-2"     
+            />
           </Link>
           <button className="shadow-[-7px_7px_0px_0px_#000000] border border-solid border-black p-4 text-[#0b0] hover:text-[#0e4b34] hover:bg-[#909893] hover:rounded-xl flex flex-row font-medium sm:py-3 sm:px-3 items-center space-x-3 text-lg md:text-lg">
             Get Started{" "}
